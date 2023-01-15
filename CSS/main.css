@@ -44,7 +44,10 @@ body {
 }
 
 .content {
-  padding: 16px;
+  padding-top: 15px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 15px;
 }
 
 .sticky {
