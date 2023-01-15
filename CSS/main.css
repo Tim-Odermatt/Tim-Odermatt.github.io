@@ -13,6 +13,7 @@ body {
 #navbar {
   overflow: hidden;
   background-color: #333;
+  margin-top: 10px;
   margin-left: 10%;
   margin-right: 10%;
   padding: 5px;
@@ -47,13 +48,13 @@ body {
 
 .sticky {
   position: fixed;
-  top: 10px;
-  width: 80%;
+  top: 0px;
   right: 0px;
+  left: 0px;
 }
 
 .sticky + .content {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 footer {
