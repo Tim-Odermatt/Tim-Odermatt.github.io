@@ -54,11 +54,10 @@ window.onload = async function fetchData() {
 	console.log("gay3");
 	console.log("egg1 = " + jsonData["e1"] + " | egg2 = " + jsonData["e2"]);
 	console.log("gay4");
-	var er;
 	if(jsonData["e1"] !== 1){
-		er = "er";
-	}else{er = "";}
-	document.getElementById("text").innerHTML = jsonData["e1"] + " Ei" + er;
+		const plural = jsonData["e1"] + " Ei";
+	}else{const plural = jsonData["e1"] + " Eier";}
+	document.getElementById("text").innerHTML = plural;
 	console.log("gay5");
 }
 </script> 
