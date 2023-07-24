@@ -10,7 +10,7 @@
     <div class="container">
     <div class="egg">🥚</div>
 
-    <div class="text" onload="fetchData()">69 Eier</div>
+    <div class="text" id="text">69 Eier</div>
     </div>
     
     <style type="text/css">
@@ -54,7 +54,7 @@ window.onload = async function fetchData() {
 	console.log("gay3");
 	console.log("egg1 = " + jsonData["e1"] + " | egg2 = " + jsonData["e2"]);
 	console.log("gay4");
-	document.getElementsByClassName("text").innerHTML = jsonData["e1"] + " Eier";
+	document.getElementById("text").innerHTML = jsonData["e1"] + " Eier";
 	console.log("gay5");
 }
 </script> 
