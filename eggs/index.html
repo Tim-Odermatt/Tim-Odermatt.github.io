@@ -10,7 +10,7 @@
     <div class="container">
     <div class="egg">🥚</div>
 
-    <div class="text">69 Eier</div>
+    <div class="text" onload="fetchData()">69 Eier</div>
     </div>
     
     <style type="text/css">
@@ -46,7 +46,7 @@
     }
     </style>
     <script>
-document.onload = async function fetchData() {
+window.onload = async function fetchData() {
     	console.log("gay1");
 	const response = await fetch("https://eggs.timu.workers.dev/");
 	console.log("gay2");
