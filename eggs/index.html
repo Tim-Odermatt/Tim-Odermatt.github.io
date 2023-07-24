@@ -54,7 +54,7 @@ window.onload = async function fetchData() {
 	console.log("Results:");
 	console.log("egg1 = " + jsonData["e1"] + " | egg2 = " + jsonData["e2"]);
 	console.log("Writing...");
-	if(jsonData["e1"] !== 1){document.getElementById("text").innerHTML = jsonData["e1"] + " Ei";}else{document.getElementById("text").innerHTML = jsonData["e1"] + " Eier";}
+	if(jsonData["e1"] == "1"){document.getElementById("text").innerHTML = jsonData["e1"] + " Ei";} else {document.getElementById("text").innerHTML = jsonData["e1"] + " Eier";}
 	console.log("Finished");
 }
 </script> 
