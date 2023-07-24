@@ -46,7 +46,8 @@
     }
     </style>
     <script>
-        window.onload = function fetchEggs() {
+        window.onload = function() {
+        alert("HA GAY");
         const response = await fetch("https://eggs.timu.workers.dev/");
         const jsonData = await response.json();
         console.log("egg1 = " + jsonData["e1"] + " | egg2 = " + jsonData["e2"]);
