@@ -47,15 +47,15 @@
     </style>
     <script>
 window.onload = async function fetchData() {
-    console.log("gay1")
+    	console.log("gay1");
 	const response = await fetch("https://eggs.timu.workers.dev/");
-	console.log("gay2")
+	console.log("gay2");
 	const jsonData = await response.json();
-	console.log("gay3")
+	console.log("gay3");
 	console.log("egg1 = " + jsonData["e1"] + " | egg2 = " + jsonData["e2"]);
-	console.log("gay4")
-	document.getElementByClassName("text").innerHTML = jsonData["e1"] + " Eier";
-	console.log("gay5")
+	console.log("gay4");
+	document.getElementsByClassName("text").innerHTML = jsonData["e1"] + " Eier";
+	console.log("gay5");
 }
 </script> 
 </body>
