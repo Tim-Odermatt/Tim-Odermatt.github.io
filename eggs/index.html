@@ -47,18 +47,15 @@
     </style>
     <script>
 window.onload = async function fetchData() {
-    	console.log("gay1");
+    	console.log("Start");
 	const response = await fetch("https://eggs.timu.workers.dev/");
-	console.log("gay2");
+	console.log("Requesting...");
 	const jsonData = await response.json();
-	console.log("gay3");
+	console.log("Results:");
 	console.log("egg1 = " + jsonData["e1"] + " | egg2 = " + jsonData["e2"]);
-	console.log("gay4");
-	if(jsonData["e1"] !== 1){
-		const plural = jsonData["e1"] + " Ei";
-	}else{const plural = jsonData["e1"] + " Eier";}
-	document.getElementById("text").innerHTML = plural;
-	console.log("gay5");
+	console.log("Writing...");
+	if(jsonData["e1"] !== 1){document.getElementById("text").innerHTML = jsonData["e1"] + " Ei";}else{document.getElementById("text").innerHTML = jsonData["e1"] + " Eier";}
+	console.log("Finished");
 }
 </script> 
 </body>
