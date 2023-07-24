@@ -9,7 +9,18 @@
 <body>
     <div class="egg">🥚<div class="center">middle</div></div>
     <style type="text/css">
-    div.egg, div.center{
+    div.egg, div.egg#text{
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 100px;
+        height: 100px;
+        font-size: 100px;
+        text-align: center;
+    }
+    div.center{
         position: absolute;
         top: 50%;
         left: 50%;
@@ -17,7 +28,7 @@
         margin-left: -50px;
         width: 100px;
         height: 100px;
-        font-size: 100px;
+        font-size: 10px;
         text-align: center;
     }
     </style>
