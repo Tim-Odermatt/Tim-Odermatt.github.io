@@ -54,7 +54,11 @@ window.onload = async function fetchData() {
 	console.log("gay3");
 	console.log("egg1 = " + jsonData["e1"] + " | egg2 = " + jsonData["e2"]);
 	console.log("gay4");
-	document.getElementById("text").innerHTML = jsonData["e1"] + " Eier";
+	var er;
+	if(jsonData["e1"] !== 1){
+		var er = "er";
+	}else{var er = "";}
+	document.getElementById("text").innerHTML = jsonData["e1"] + " Ei" + er;
 	console.log("gay5");
 }
 </script> 
